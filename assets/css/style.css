@@ -2,13 +2,24 @@
     --border-style: thin solid #999;
 }
 
+title {
+    background-color: #000;
+    background-size: 100%;
+    color: white;
+    font-weight: bold;
+}
+
 * {
+    display: flex;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
+    align-items: center;
     background-color: #f9f9f8;
 }
 
@@ -17,27 +28,31 @@ header {
     font-family: serif;
     color: #000;
     background-color: rgb(3, 86, 116);
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 40px;
-    padding-top: 56px;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    width: 100%;
 }
 
 h1 {
-
     font-size: 150px;
     font-weight: 300;
+    float: left;
+    padding-left: 20px;
 }
 
-.navigation ul {
+nav {
     display: flex;
-    justify-content: center;
+    width: 100%;
     align-items: center;
-    margin-bottom: 50px;
-    background-color: rgb(3, 86, 116);
-    font-size: 25px;
-    font-weight: bolder;
-    padding-top: 10px;
+    justify-content: flex-end;
+}
+
+.button-links {
+    display: flex;
+    flex-direction: row;
 }
 
 .button-links li {
@@ -54,14 +69,13 @@ h1 {
 }
 
 .button-links li > a:hover {
-    color: rgb(46, 45, 49);
+    color: rgb(0, 4, 245);
     cursor: pointer;
 }
 
 .about-me-photo {
-    float: right;
-    height: 300px;
-    width: 330px;
+    height: 150px;
+    width: 150px;
 }
 
 .about-me-title {
@@ -90,34 +104,97 @@ main {
     margin: 20px 50px 20px 50px;
 }
 
-
 .main-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: 5px solid black;
-/*this is the line I'm working on*/
     height: 600px;
     width: 1000px;
     margin-top: 20px;
 }
 
 .main-project:hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 5px solid black;
-    height: 600px;
-    width: 1000px;
-    margin-top: 20px;
     opacity: 0.5;
 }
 
-.projects {
+.project-1 {
+    background-image: url(https://img.freepik.com/free-vector/poker-background-with-golden-cards-realistic-dice_1017-32739.jpg?w=2000&t=st=1671495545~exp=1671496145~hmac=f7a525ff234f7ea6ae0af6147ce473f8ed84084d96956d993301d3f951e0253f);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border: 2px solid black;
     height: 500px;
     width: 500px;
+    font-size: xx-large;
+    color: blue;
 }
+
+.project-1:hover {
+    opacity: 0.5;
+}
+
+.project-2 {
+    background-image: url(https://christoph551.github.io/prework-study-guide/assets/Earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    font-size: xx-large;
+    color: blue;
+}
+
+.project-2:hover {
+    opacity: 0.5;
+}
+
+.project-3 {
+    background-image: url(https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    font-size: xx-large;
+    color: blue;
+}
+
+.project-3:hover {
+    opacity: 0.5;
+}
+
+.project-4 {
+    background-image: url(https://travellemming.com/wp-content/uploads/Places-to-Go-Camping-Near-San-Diego.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    font-size: xx-large;
+    color: blue;
+}
+
+.project-4:hover {
+    opacity: 0.5;
+}
+
+.other-projects figure {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.other-projects a span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .projects:hover {
     border: 2px solid black;
@@ -135,12 +212,6 @@ main {
     margin-bottom: 50px;
     padding-bottom: 20px;
     border-bottom: 3px solid #999;
-}
-
-.other-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 h3 {
@@ -212,3 +283,15 @@ footer {
 .latest-project {
     font-size: x-large;
 }
+
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+} header h1 {
+    height: 100%;
+    width: 100%;
+    font-size: 100px;
+    font-weight: bolder;
+} .about-me-photo {
+        height: 300px;
+        width: 300px;
+} 
+

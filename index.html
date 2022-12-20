@@ -6,29 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Christopher Simmonds' Portfolio</title>
+
+<title>Christopher Simmonds' Portfolio</title>
 </head>
 <body> <!--Moved photo of myself to the right side of header-->
-    <img class="about-me-photo" src="./assets/images/chrisPhoto.jpg" alt="Photo of myself at the Celtic Festival">
     <header>
         <h1>Christopher Simmonds</h1>
-        <nav class="navigation">
-            <ul class="button-links">
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
+        <img class="about-me-photo" src="./assets/images/chrisPhoto.jpg" alt="Photo of myself at the Celtic Festival">
     </header>
+    <nav class="navigation">
+        <ul class="button-links">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
 
     <main>
         <h2 id="about-me" class="about-me-title">About Me</h2>    
@@ -46,29 +40,32 @@
             </div>
         </section>
         <h2 id="work">Work</h2>
+<!-- Each photo below is a generic image to separate from the main project listed above. I will end up changing these more than likely. Photos are called using CSS sheet and <figure> tag -->
         <section class="other-projects">
-            <div> <!-- Each photo below is a generic image to separate from the main project listed above. I will end up changing these more than likely. -->
-                <h3>Project to be added</h3>
-                    <a href="" target="_blank">
-                    <img class="projects" src="./assets/images/pokerChips.jpg" alt="Stock photo of a Royal Flush among poker chips.">
+            <div>
+                <a href="" target="_blank">
+                    <figure class="project-1">Project 1</figure>
+                </a>
+            </div>
+            <div>
+                <a href="https://christoph551.github.io/prework-study-guide/" target="_blank">
+                    <span tabindex="0" data-descr="This is for my Prework-Study-Guide.">
+                    <figure class="project-2">Prework-Study-Guide</figure>
+                </span>
                 </a>    
             </div>
             <div>
-                <h3>Project to be added</h3>
-                    <a href="" target="_blank">
-                    <img class="projects" src="./assets/images/camping.jpg" alt="Stock photo of tent under the stars">
+                <a href="" target="_blank">
+                    <span tabindex="0" data-descr="This is for project #3.">
+                    <figure class="project-3">Project 3</figure>
+                </span>
                 </a>    
             </div>
             <div>
-                <h3>Project to be added</h3>
-                    <a href="" target="_blank">
-                    <img class="projects" src="./assets/images/matrix.jpg" alt="Stock photo of the matrix.">
-                </a>    
-            </div>
-            <div>
-                <h3>Project to be added</h3>
-                    <a href="" target="_blank">
-                    <img class="projects" src="./assets/images/sparks.jpg" alt="Image of steel wool sparking">
+                <a href="" target="_blank">
+                    <span tabindex="0" data-descr="This is for project #4.">
+                    <figure class="project-4">Project 4</figure>
+                </span>
                 </a>    
             </div>
         </section>

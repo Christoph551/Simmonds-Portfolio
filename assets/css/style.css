@@ -1,129 +1,140 @@
 :root {
     --border-style: thin solid #999;
-}
-
-title {
-    background-color: #000;
-    background-size: 100%;
-    color: white;
-    font-weight: bold;
+    --image-border: thick double rgb(255, 255, 255);
+    --main-project: thin solid #000;
 }
 
 * {
-    display: flex;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.top-of-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #f9f9f8;
+    font-size: 45px;      /* Included a cool background photo to update sytle of header. Would be nice to learn to center the image and size properly */
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/andromeda-galaxy-royalty-free-image-1585682435.jpg);
+    background-repeat: no-repeat;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 header {
     display: flex;
-    font-family: serif;
-    color: #000;
-    background-color: rgb(3, 86, 116);
-    flex-direction: row;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    flex-direction: row-reverse;
     justify-content: space-around;
-    width: 100%;
+    background-color: rgb(2, 39, 53);
+    color:azure;
+    background-size: auto;
+    border: var(--image-border);
+    align-items: center;
+    opacity: 0.5; /* Added opacity to the overall header of my name to contrast with the photo of myself */
 }
 
-h1 {
+.portfolioPhoto {  
+    height: 200px;
+    width: 200px;
+    border: var(--image-border);
+}
+
+header h1 {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 150px;
     font-weight: 300;
-    float: left;
-    padding-left: 20px;
 }
 
-nav {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.button-links {
-    display: flex;
+.navigation {
+    display: block;
     flex-direction: row;
 }
 
-.button-links li {
-    margin: 2px 10px 2px 10px;
-    font-size: larger;
-    border-right: var(--border-style);
-    padding: 0px 20px 0px 20px;
+li:nth-child(-n + 4) {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.button-links li > a {
-    color: black;
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
-    border-bottom: 2px solid #000;
+    color: azure;
 }
 
-.button-links li > a:hover {
-    color: rgb(0, 4, 245);
-    cursor: pointer;
+/* May need to single out the nav buttons with the hover property due to image links being an anchor as well */
+a:hover {
+    color:blue;
 }
 
-.about-me-photo {
-    height: 150px;
-    width: 150px;
-}
+/* This line would be the start of the main section. Have not yet written code for main */
 
-.about-me-title {
-        display: flex;
-        font-size: xxx-large;
-        margin-bottom: 20px;
-        font-weight: bolder;
-        justify-content: center;
-        padding-bottom: 20px;
-        border-bottom: 3px solid #999;
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 200;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(4, 10, 12);
+    color: azure;
+    border: var(--image-border);
 }
 
 #about-me-paragraph {
+    margin-right: 400px;
+    margin-left: 400px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h3 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    font-size: 30px;
-    margin-bottom: 30px;
-    border-bottom: 3px solid gray;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 50px 20px 50px;
-}
-
 .main-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 5px solid black;
+    width: 1100px;
     height: 600px;
-    width: 1000px;
-    margin-top: 20px;
+    padding: 20px;
+    border: thin solid black;
+    margin-bottom: 20px;
 }
 
 .main-project:hover {
-    opacity: 0.5;
+    padding: 18px;
+    background-color: rgb(0, 0, 0);
+    border: thin solid black;
+    opacity: 0.75;
 }
+
+.other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 
 .project-1 {
     background-image: url(https://img.freepik.com/free-vector/poker-background-with-golden-cards-realistic-dice_1017-32739.jpg?w=2000&t=st=1671495545~exp=1671496145~hmac=f7a525ff234f7ea6ae0af6147ce473f8ed84084d96956d993301d3f951e0253f);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 2px solid black;
+    border: 2px thick rgb(43, 42, 42);
     height: 500px;
     width: 500px;
     font-size: xx-large;
@@ -132,6 +143,7 @@ main {
 
 .project-1:hover {
     opacity: 0.5;
+    padding: 50px;
 }
 
 .project-2 {
@@ -139,7 +151,6 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 2px solid black;
     height: 500px;
     width: 500px;
     font-size: xx-large;
@@ -148,6 +159,7 @@ main {
 
 .project-2:hover {
     opacity: 0.5;
+    padding: 50px;
 }
 
 .project-3 {
@@ -155,7 +167,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 2px solid black;
+    border: 10px thick rgb(43, 42, 42);
     height: 500px;
     width: 500px;
     font-size: xx-large;
@@ -164,6 +176,7 @@ main {
 
 .project-3:hover {
     opacity: 0.5;
+    padding: 50px;
 }
 
 .project-4 {
@@ -171,7 +184,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 2px solid black;
+    border: 10px thick rgb(43, 42, 42);
     height: 500px;
     width: 500px;
     font-size: xx-large;
@@ -180,6 +193,7 @@ main {
 
 .project-4:hover {
     opacity: 0.5;
+    padding: 50px;
 }
 
 .other-projects figure {
@@ -187,7 +201,9 @@ main {
     margin-top: 30px;
     margin-bottom: 30px;
     align-items: center;
+    flex-direction: column;
     justify-content: flex-end;
+    color: azure;
 }
 
 .other-projects a span {
@@ -203,39 +219,20 @@ main {
     opacity: 0.5;
 }
 
-#work {
+h4 {
     display: flex;
     justify-content: center;
-    font-size: xxx-large;
+    font-size: 50px;
     font-weight: bolder;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 3px solid #999;
-}
-
-h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bolder;
-    padding-bottom: 5px;
-}
-
-#contact-me {
-    display: flex;
-    justify-content: center;
-    font-size: xxx-large;
-    font-weight: bolder;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #999;
+    border-bottom: thick solid grey;
 }
 
 .contact-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 50px;
@@ -244,54 +241,77 @@ h3 {
     padding-top: 10px;
 }
 
-.contact-links li {
-    margin: 2px 10px 2px 10px;
-    font-size: larger;
-    padding: 0px 20px 0px 20px;
+.contact-links li a {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    color: blue;
+    margin-top: 20px;
+    margin-right: 80px;
 }
 
-.contact-links li > a {
-    color: black;
-    text-decoration: none;
-    border-bottom: 2px solid #000;
-}
-
-.contact-links li > a:hover {
-    color: rgb(46, 45, 49);
-    cursor: pointer;
+.contact-links li a:hover {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    color: blue;
+    font-size:xx-large;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(3, 86, 116);
-    height: 100px;
-    width: 100%;
-    font-size: xx-large;
-    font-weight: bolder;
+    font-size: large;
+    background-color: #000;
+    border: var(--image-border);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: azure;
 }
 
-/*Need to add media queries to allow for accessibiliy on multiple screen sizes.*/
+/* Media queries not yet operating like I'd like them to. May need to write a lot more CSS rules for each element.*/
+/* ------------------------------------------------------------------------------------- 
 
-.top {
+@media all and (max-width: 500px) {
+} header h1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: serif;
+} .portfolioPhoto {
+        height: 75px;
+        width: 75px;
+} li:nth-child(-n + 4) {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.latest-project {
-    font-size: x-large;
-}
-
-@media screen and (max-width: 1920px) and (max-height: 1080px) {
+@media all and (max-width: 1200px) {
 } header h1 {
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     font-size: 100px;
     font-weight: bolder;
-} .about-me-photo {
-        height: 300px;
-        width: 300px;
-} 
+} .portfolioPhoto {
+        height: 150px;
+        width: 150px;
+} li:nth-child(-n + 4) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:aqua;
+}
 
+@media all and (max-width: 1900px) {
+} header h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    font-weight: bold;
+} .portfolioPhoto {
+        height: 100px;
+        width: 100px;
+} li:nth-child(-n + 4) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

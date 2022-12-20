@@ -6,43 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Christopher Simmonds' Portfolio</title>
 
-<title>Christopher Simmonds' Portfolio</title>
 </head>
 <body> <!--Moved photo of myself to the right side of header-->
-    <header>
-        <h1>Christopher Simmonds</h1>
-        <img class="about-me-photo" src="./assets/images/chrisPhoto.jpg" alt="Photo of myself at the Celtic Festival">
-    </header>
-    <nav class="navigation">
-        <ul class="button-links">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
-    </nav>
-
-
-    <main>
-        <h2 id="about-me" class="about-me-title">About Me</h2>    
-        <section class="top">
-            <p id="about-me-paragraph">
-                Hello World! My name is Christopher Simmonds, but most people just call me Chris. I have always been really intrigued by technology ever since I got my first game console, the original Playstation! Previously, I worked in the telecommunications industry doing a lot of hands-on technician work. This started out with installing home security and smart home solutions with Northstar Alarm before venturing into installing and servicing Direct Broadcast Satellite TV Services with Dish Network. Within Dish, I managed to work my way up the ladder from an entry level technician, to the Quality Assurance Specialist for southern Arizona, and eventually accepted a role into management. After Dish Network, I moved on to become an Operations Manager for a local company that specialized in Structured Cabling for local businesses and government facilities. While this had been quite a fruitful career, working in the Arizona sun and climbing up and down ladders all day long really started taking it's toll on my body. It was then that I decided that it was time for a career change altogether. I found a Coding Bootcamp with the University of Arizona and settled on that being the next path for my professional career. At the time of writing this, I am 3 days into this program, and 3 months from now I anticipate on receiving my certificate of graduation and actively job hunting for a new life in Web Development. 
-            </p>
-            <div> 
-                <h3 class="latest-project">
-                    Check out my latest project!
-                </h3>
-                <a href="https://christoph551.github.io/Code-Refactor/" target="_blank">
-                    <img class="main-project" src="./assets/images/digital-marketing-meeting.jpg" alt="Horiseon Meeting">
-                </a>
-            </div>
-        </section>
-        <h2 id="work">Work</h2>
+    <section class="top-of-page">
+        <header>
+            <h1>Christopher Simmonds</h1>
+        </header>  <!-- changed class name of photo to be more suitable-->
+        <img class="portfolioPhoto" src="./assets/images/chrisPhoto.jpg" alt="Photo of myself at the Celtic Festival">
+        <nav class="navigation">
+            <ul> <!-- Navigations links do not seem to work any longer. Will need to troubleshoot this -->
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </section>
+    <h2>About Me</h2>    
+    <section class="about-me-section">
+        <p id="about-me-paragraph">
+            Hello World! My name is Christopher Simmonds, but most people just call me Chris. I have always been really intrigued by technology ever since I got my first game console, the original Playstation! Previously, I worked in the telecommunications industry doing a lot of hands-on technician work. This started out with installing home security and smart home solutions with Northstar Alarm before venturing into installing and servicing Direct Broadcast Satellite TV Services with Dish Network. Within Dish, I managed to work my way up the ladder from an entry level technician, to the Quality Assurance Specialist for southern Arizona, and eventually accepted a role into management. After Dish Network, I moved on to become an Operations Manager for a local company that specialized in Structured Cabling for local businesses and government facilities. While this had been quite a fruitful career, working in the Arizona sun and climbing up and down ladders all day long really started taking it's toll on my body. It was then that I decided that it was time for a career change altogether. I found a Coding Bootcamp with the University of Arizona and settled on that being the next path for my professional career. At the time of writing this, I am 3 days into this program, and 3 months from now I anticipate on receiving my certificate of graduation and actively job hunting for a new life in Web Development. 
+        </p>
+    </section>
+        <h3>Check out my latest project!</h3>
+            <a href="https://christoph551.github.io/Code-Refactor/" target="_blank">
+                <img class="main-project" src="./assets/images/digital-marketing-meeting.jpg" alt="Horiseon Meeting">
+            </a>
+        <h2>Work</h2>
 <!-- Each photo below is a generic image to separate from the main project listed above. I will end up changing these more than likely. Photos are called using CSS sheet and <figure> tag -->
         <section class="other-projects">
-            <div>
+            <div> <!-- Do not yet have links for projects 1, 3 and 4. Clicking those images will load the portfolio in another tab for now -->
                 <a href="" target="_blank">
                     <figure class="project-1">Project 1</figure>
                 </a>
@@ -69,21 +64,21 @@
                 </a>    
             </div>
         </section>
-        <h2 id="contact-me">Contact Me</h2>
+        <h4>Contact Me</h4>
         <section class="contact-nav">
         <nav>
             <ul class="contact-links">
                 <li>
-                    <a href="https://github.com/Christoph551" target="_blank">GitHub</a>
+                    <a href="https://github.com/Christoph551" target="_blank">GitHub Profile</a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/christopher-simmonds-b8721486/" target="_blank">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/christopher-simmonds-b8721486/" target="_blank">LinkedIn Profile</a>
                 </li>
                 <li>
-                    <a href="tel:5202566124" target="_blank">520-256-6124</a>
+                    <a href="tel:5202566124" target="_blank">Mobile Phone: (520) 256-6124</a>
                 </li>
                 <li>
-                    <a href="mailto:christophersimmonds551@gmail.com" target="_blank">christophersimmonds551@gmail.com</a>
+                    <a href="mailto:christophersimmonds551@gmail.com" target="_blank">Email</a>
                 </li>
             </ul>
         </nav>

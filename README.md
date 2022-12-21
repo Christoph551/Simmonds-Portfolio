@@ -16,5 +16,5 @@ Please note that I have not yet added links to Project 1, Project 3 and Project 
 Also, I have not had the time to address the issues with the navigation links in the header or get the media queries to operate properly for smaller resolution screens.
 
 ## Below is a screenshot of my deployed website
-[Screenshot of entire website](assets/images/Simmonds-Portfolio)
+[Screenshot of entire website](./assets/images/Simmonds-Portfolio.png)
 Please refer to the following link to see the deployed site: https://christoph551.github.io/Simmonds-Portfolio/

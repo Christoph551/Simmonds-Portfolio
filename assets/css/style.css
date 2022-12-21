@@ -31,11 +31,11 @@ header {
     flex-direction: row-reverse;
     justify-content: space-around;
     background-color: rgb(2, 39, 53);
-    color:azure;
+    color:rgb(240, 255, 240);
     background-size: auto;
     border: var(--image-border);
     align-items: center;
-    opacity: 0.5; /* Added opacity to the overall header of my name to contrast with the photo of myself */
+    opacity: 0.5; /* Added opacity to the overscreen header of my name to contrast with the photo of myself */
 }
 
 .portfolioPhoto {  
@@ -143,7 +143,7 @@ h3 {
 
 .project-1:hover {
     opacity: 0.5;
-    padding: 50px;
+    padding: 30px;
 }
 
 .project-2 {
@@ -159,7 +159,7 @@ h3 {
 
 .project-2:hover {
     opacity: 0.5;
-    padding: 50px;
+    padding: 30px;
 }
 
 .project-3 {
@@ -176,7 +176,7 @@ h3 {
 
 .project-3:hover {
     opacity: 0.5;
-    padding: 50px;
+    padding: 30px;
 }
 
 .project-4 {
@@ -193,7 +193,7 @@ h3 {
 
 .project-4:hover {
     opacity: 0.5;
-    padding: 50px;
+    padding: 30px;
 }
 
 .other-projects figure {
@@ -270,48 +270,67 @@ footer {
 }
 
 /* Media queries not yet operating like I'd like them to. May need to write a lot more CSS rules for each element.*/
-/* ------------------------------------------------------------------------------------- 
-
-@media all and (max-width: 500px) {
-} header h1 {
+/*
+@media screen and (min-width: 1800px) {
+} a {
+    font-size: 40px;
+} #about-me-paragraph {
+    font-size: 40px;
+    margin: 20px 80px 20px 80px;
+} .other-projects {
     display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: serif;
-} .portfolioPhoto {
-        height: 75px;
-        width: 75px;
-} li:nth-child(-n + 4) {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-@media all and (max-width: 1200px) {
-} header h1 {
+@media screen and (min-width: 1500px) {
+} .top-of-page h1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+} a {
+    font-size: 40px;
+} #about-me-paragraph {
+    font-size: 30px;
+    margin: 20px 80px 20px 80px;
+}
+
+@media screen and (min-width: 1499px) {
+} .top-of-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 45px;      
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/andromeda-galaxy-royalty-free-image-1585682435.jpg);
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 40px;
+} a {
+    padding-top: 10px;
+    font-size: 40px;
+} #about-me-paragraph {
+    font-size: 30px;
+    margin: 20px 80px 20px 80px;
+}
+
+@media screen and (min-width: 769px) {
+} 
+
+@media screen and (min-width: 481px) {
+} 
+
+@media screen and (max-width: 320px) {
+} .top-of-page h1 {
     display: flex;
     flex-direction: column;
     font-size: 100px;
-    font-weight: bolder;
-} .portfolioPhoto {
-        height: 150px;
-        width: 150px;
-} li:nth-child(-n + 4) {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color:aqua;
-}
-
-@media all and (max-width: 1900px) {
-} header h1 {
-    display: flex;
-    flex-direction: column;
-    font-size: 80px;
-    font-weight: bold;
-} .portfolioPhoto {
-        height: 100px;
-        width: 100px;
-} li:nth-child(-n + 4) {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 0;
+    margin: 0;
+} a {
+    font-size: 40px;
+} #about-me-paragraph {
+    font-size: 30px;
+    margin: 20px 80px 20px 80px;
 }

@@ -47,7 +47,7 @@ header {
 header h1 {
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 150px;
+    font-size: 120px;
     font-weight: 300;
 }
 
@@ -66,32 +66,30 @@ a {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
+    position: relative;
+    right: 15px;
     color: azure;
 }
 
-/* May need to single out the nav buttons with the hover property due to image links being an anchor as well */
 a:hover {
     color:blue;
 }
 
-/* This line would be the start of the main section. Have not yet written code for main */
-
 h2 {
     display: flex;
     justify-content: center;
-    font-size: 100px;
+    align-items: center;
+    font-size: 60px;
     font-weight: 200;
     margin-top: 20px;
-    padding-bottom: 20px;
-    padding-bottom: 20px;
     background-color: rgb(4, 10, 12);
     color: azure;
     border: var(--image-border);
 }
 
 #about-me-paragraph {
-    margin-right: 400px;
-    margin-left: 400px;
+    margin-right: 30px;
+    margin-left: 30px;
     font-size: 40px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -135,8 +133,8 @@ h3 {
     background-position: center;
     background-size: cover;
     border: 2px thick rgb(43, 42, 42);
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
     font-size: xx-large;
     color: blue;
 }
@@ -151,8 +149,8 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
     font-size: xx-large;
     color: blue;
 }
@@ -168,8 +166,8 @@ h3 {
     background-position: center;
     background-size: cover;
     border: 10px thick rgb(43, 42, 42);
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
     font-size: xx-large;
     color: blue;
 }
@@ -180,13 +178,13 @@ h3 {
 }
 
 .project-4 {
-    background-image: url(https://travellemming.com/wp-content/uploads/Places-to-Go-Camping-Near-San-Diego.jpg);
+    background-image: url(https://media.istockphoto.com/id/1213691432/photo/tourists-sitting-near-campfire-under-starry-sky.jpg?s=612x612&w=0&k=20&c=6B2GdQROSabFQKrerTaYHaplaCU2UwiOFokyUW6hEp0=);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border: 10px thick rgb(43, 42, 42);
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
     font-size: xx-large;
     color: blue;
 }
@@ -242,12 +240,11 @@ h4 {
 }
 
 .contact-links li a {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     align-items: center;
     color: blue;
     margin-top: 20px;
-    margin-right: 80px;
 }
 
 .contact-links li a:hover {
@@ -269,68 +266,133 @@ footer {
     color: azure;
 }
 
-/* Media queries not yet operating like I'd like them to. May need to write a lot more CSS rules for each element.*/
-/*
-@media screen and (min-width: 1800px) {
-} a {
-    font-size: 40px;
-} #about-me-paragraph {
-    font-size: 40px;
-    margin: 20px 80px 20px 80px;
-} .other-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+@media screen and (max-width: 1875px) {
+    .top-of-page h1 {
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 80px;
+        font-weight: 100;
 }
-
-@media screen and (min-width: 1500px) {
-} .top-of-page h1 {
-    display: flex;
-    flex-direction: row;
-    font-size: 100px;
-    padding: 0;
-    margin: 0;
-} a {
-    font-size: 40px;
-} #about-me-paragraph {
+#about-me-paragraph {
     font-size: 30px;
-    margin: 20px 80px 20px 80px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
-@media screen and (min-width: 1499px) {
-} .top-of-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 45px;      
-    background-image: url(https://hips.hearstapps.com/hmg-prod/images/andromeda-galaxy-royalty-free-image-1585682435.jpg);
-    background-repeat: no-repeat;
-    padding-top: 50px;
-    padding-bottom: 40px;
-} a {
-    padding-top: 10px;
-    font-size: 40px;
-} #about-me-paragraph {
+}
+
+@media screen and (max-width: 1400px) {
+    .top-of-page h1 {
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 75px;
+        font-weight: 100;
+}
+.top-of-page {
     font-size: 30px;
-    margin: 20px 80px 20px 80px;
+}
+#about-me-paragraph {
+    font-size: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
-@media screen and (min-width: 769px) {
+}
+
+@media screen and (max-width: 1200px) {
+    .top-of-page {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 100;
+} 
+.top-of-page h1 {
+    font-size: 75px;
+}
+.portfolioPhoto {  
+    height: 200px;
+    width: 200px;
+    border: var(--image-border);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#about-me-paragraph {
+    font-size: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.main-project {
+    width: 700px;
+    height: 400px;
+    padding: 20px;
+    border: thin solid black;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 45px;
+}
+
 } 
 
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 1025px) {
+    .top-of-page {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 100;
 } 
+.top-of-page h1 {
+    font-size: 75px;
+}
 
-@media screen and (max-width: 320px) {
-} .top-of-page h1 {
-    display: flex;
-    flex-direction: column;
-    font-size: 100px;
-    padding: 0;
-    margin: 0;
-} a {
-    font-size: 40px;
-} #about-me-paragraph {
-    font-size: 30px;
-    margin: 20px 80px 20px 80px;
+}
+
+@media screen and (max-width: 769px) {
+    .top-of-page {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+} 
+.top-of-page h1 {
+    font-size: 50px;
+}
+#about-me-paragraph {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.main-project {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border: thin solid black;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 25px;
+}
+
+}
+
+@media screen and (max-width: 499px) {
+    .top-of-page {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+} 
+.top-of-page h1 {
+    font-size: 45px;
+}
+#about-me-paragraph {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
 }

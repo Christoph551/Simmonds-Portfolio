@@ -128,10 +128,10 @@ h3 {
 
 
 .project-1 {
-    background-image: url(https://img.freepik.com/free-vector/poker-background-with-golden-cards-realistic-dice_1017-32739.jpg?w=2000&t=st=1671495545~exp=1671496145~hmac=f7a525ff234f7ea6ae0af6147ce473f8ed84084d96956d993301d3f951e0253f);
+    background-image: url(../images/Password-Generator.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     border: 2px thick rgb(43, 42, 42);
     height: 350px;
     width: 350px;
@@ -201,7 +201,7 @@ h3 {
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
-    color: azure;
+    color: rgb(106, 106, 107);
 }
 
 .other-projects a span {

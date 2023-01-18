@@ -161,7 +161,7 @@ h3 {
 }
 
 .project-3 {
-    background-image: url(https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg);
+    background-image: url(../images/digital-marketing-meeting.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,10 +178,10 @@ h3 {
 }
 
 .project-4 {
-    background-image: url(https://media.istockphoto.com/id/1213691432/photo/tourists-sitting-near-campfire-under-starry-sky.jpg?s=612x612&w=0&k=20&c=6B2GdQROSabFQKrerTaYHaplaCU2UwiOFokyUW6hEp0=);
+    background-image: url(../images/Start-Screen.PNG);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     border: 10px thick rgb(43, 42, 42);
     height: 350px;
     width: 350px;
